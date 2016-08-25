@@ -73,10 +73,11 @@ command W w !sudo tee % > /dev/null
 set so=7
 
 " Avoid garbled characters in Chinese language windows OS
-let $LANG='en' 
 set langmenu=en
+" lang messages zh_CN.UTF-8
 source $VIMRUNTIME/delmenu.vim
 source $VIMRUNTIME/menu.vim
+
 
 " Turn on the WiLd menu
 set wildmenu
@@ -88,6 +89,11 @@ if has("win16") || has("win32")
 else
     set wildignore+=*/.git/*,*/.hg/*,*/.svn/*,*/.DS_Store
 endif
+
+" Show line number
+set number
+" Show relative line number
+set relativenumber
 
 "Always show current position
 set ruler
@@ -158,6 +164,7 @@ endif
 
 " Set utf8 as standard encoding and en_US as the standard language
 set encoding=utf8
+set fileencodings=ucs-bom,utf-8,cp936,gb18030,big5,euc-jp,euc-kr,latin1
 
 " Use Unix as the standard file type
 set ffs=unix,dos,mac
@@ -275,6 +282,10 @@ set statusline=\ %{HasPaste()}%F%m%r%h\ %w\ \ CWD:\ %r%{getcwd()}%h\ \ \ Line:\ 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Remap VIM 0 to first non-blank character
 map 0 ^
+
+" Relative number relate
+noremap <silent> <expr> j (v:count == 0 ? 'gj' : 'j')
+noremap <silent> <expr> k (v:count == 0 ? 'gk' : 'k')
 
 " Move a line of text using ALT+[jk] or Command+[jk] on mac
 nmap <M-j> mz:m+<cr>`z

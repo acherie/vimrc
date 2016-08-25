@@ -1,0 +1,114 @@
+set nocp
+
+" Tab related
+set tabstop=4
+set shiftwidth=4
+set expandtab
+set smarttab
+set ambiwidth=double
+
+" Format related
+" set tw=78
+" set lbr
+set fo+=mB
+
+" Indent related
+set cin
+set ai
+set cino=:0g0t0(susj1
+
+" Editing related
+set backspace=indent,eol,start
+set whichwrap=b,s,<,>,[,]
+set mouse=a
+set selectmode=
+set mousemodel=popup
+set keymodel=
+set selection=inclusive
+
+" Misc
+set wildmenu
+set nospell
+
+" encoding related
+set encoding=utf-8
+set langmenu=zh_CN.UTF-8
+lang messages zh_CN.UTF-8
+set fileencodings=ucs-bom,utf-8,cp936,gb18030,big5,euc-jp,euc-kr,latin1
+
+
+" File type related
+filetype plugin indent on
+
+" 编码
+if (has("gui_running") || has("unix"))
+else
+    set encoding=chinese " 设置命令提示符下vim不乱码
+    set termencoding=chinese     "终端下的编码，对gvim来说没有必要设置
+endif
+" Encoding related
+
+" Display related
+set ru
+" Display line number
+set number
+" Display relative number
+set relativenumber
+set sm
+set incsearch
+set hls
+if (has("gui_running"))
+    set guioptions+=b
+    " enbale auto copy in visual modal and no modal
+    " set guioptions+=a
+    " enable copy in normal model
+    " set guioptions+=A
+    colo torte
+    set wrap
+    " set access system clipboard
+    " set clipboard=unnamed
+    " set split right
+    set splitright
+else
+    colo ron
+    set wrap
+endif
+syntax on
+
+"=============================================================================
+" Platform dependent settings
+"=============================================================================
+
+if (has("win32"))
+
+    "-------------------------------------------------------------------------
+    " Win32
+    "-------------------------------------------------------------------------
+
+    if (has("gui_running"))
+        set guifont=YaHei_Consolas_Hybrid:h11:cANSI
+        " set guifontwide=NSimSun:h11:cGB2312
+    endif
+
+else
+
+    if (has("gui_running"))
+        set guifont=Bitstream\ Vera\ Sans\ Mono\ 14
+    endif
+
+endif
+
+" gui_win32 relate
+" Use ~x on an English Windows version or ~n for French.
+au GUIEnter * simalt ~x
+" key map ok
+nmap <c-s> :w<CR>
+vmap <c-s> <Esc><c-s>gv
+imap <c-s> <Esc><c-s>
+
+nmap <F2> :update<CR>
+vmap <F2> <Esc><F2>gv
+imap <F2> <c-o><F2>
+" relative number relate
+noremap <silent> <expr> j (v:count == 0 ? 'gj' : 'j')
+noremap <silent> <expr> k (v:count == 0 ? 'gk' : 'k')
