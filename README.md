@@ -172,7 +172,7 @@ Smart way to move between windows (`<ctrl>j` etc.):
 
 Closing of current buffer(s) (`<leader>bd` and (`<leader>ba`)):
 	
-	" Close current buffer
+	" Close current Buffer
 	map <leader>bd :Bclose<cr>
 	
 	" Close all buffers

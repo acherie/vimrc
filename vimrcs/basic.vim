@@ -95,6 +95,10 @@ set number
 " Show relative line number
 set relativenumber
 
+" Splitting.
+set splitright          " Open new vertical panes in the right rather than left.
+set splitbelow          " Open new horizontal panes in the bottom rather than top.
+
 "Always show current position
 set ruler
 
@@ -139,6 +143,9 @@ set tm=500
 
 " Add a bit extra margin to the left
 set foldcolumn=1
+
+" Sessions.
+set sessionoptions=blank,buffers,curdir,globals,help,localoptions,resize,tabpages,winpos,winsize
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
