@@ -90,6 +90,9 @@ else
     set wildignore+=*/.git/*,*/.hg/*,*/.svn/*,*/.DS_Store
 endif
 
+" Disable folding
+set nofoldenable
+
 " Show line number
 set number
 " Show relative line number
