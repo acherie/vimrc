@@ -4,3 +4,12 @@
 [submodule "sources_non_forked/vim-session"]
 	path = sources_non_forked/vim-session
 	url = https://github.com/xolox/vim-session.git
+[submodule "sources_non_forked/gruvbox"]
+	path = sources_non_forked/gruvbox
+	url = https://github.com/morhetz/gruvbox.git
+[submodule "sources_non_forked/vim-colorschemes"]
+	path = sources_non_forked/vim-colorschemes
+	url = https://github.com/flazz/vim-colorschemes.git
+[submodule "sources_non_forked/vim-gitgutter"]
+	path = sources_non_forked/vim-gitgutter
+	url = https://github.com/airblade/vim-gitgutter.git

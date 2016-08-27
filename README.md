@@ -69,6 +69,8 @@ I recommend reading the docs of these plugins to understand them better. Each of
 * [snipMate.vim](https://github.com/garbas/vim-snipmate): snipMate.vim aims to be a concise vim script that implements some of TextMate's snippets features in Vim
 * [bufexplorer.zip](https://github.com/vim-scripts/bufexplorer.zip): Buffer Explorer / Browser. This plugin can be opened with `<leader+o>`
 * [NERD Tree](https://github.com/scrooloose/nerdtree): A tree explorer plugin for vim
+* [vim-session](https://github.com/xolox/vim-session): Extended session management for Vim (:mksession on steroids)
+* [vim-gitgutter](https://github.com/airblade/vim-gitgutter): A Vim plugin which shows a git diff in the gutter (sign column) and stages/undoes hunks
 * [ack.vim](https://github.com/mileszs/ack.vim): Vim plugin for the Perl module / CLI script 'ack'
 * [ag.vim](https://github.com/rking/ag.vim): A much faster Ack
 * [ctrlp.vim](https://github.com/ctrlpvim/ctrlp.vim): Fuzzy file, buffer, mru and tag finder. In my config it's mapped to `<Ctrl+F>`, because `<Ctrl+P>` is used by YankRing
@@ -88,8 +90,10 @@ Remove all clutter and focus only on the essential. Similar to iA Writer or Writ
 
 ## Included color schemes
 
-* [peaksea](https://github.com/vim-scripts/peaksea): My favorite!
+* [gruvbox](https://github.com/morhetz/gruvbox)
+* [peaksea](https://github.com/vim-scripts/peaksea)
 * [vim-colors-solarized](https://github.com/altercation/vim-colors-solarized)
+* [vim-colorschemes](https://github.com/flazz/vim-colorschemes)
 * [vim-irblack](https://github.com/wgibbs/vim-irblack)
 * [mayansmoke](https://github.com/vim-scripts/mayansmoke)
 * [vim-pyte](https://github.com/therubymug/vim-pyte)
